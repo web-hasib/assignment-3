@@ -40,27 +40,33 @@
     <header class="">
       <section class="navbar pt-5 bg-[#EFEBE3]">
         <!-- problem -->
-        <div class="w-10/12 mx-auto lg:hidden">
+        <div class="w-11/12 mx-auto lg:hidden">
           <!-- lg:hidden flex justify-between space-x-px -->
-          <div class="flex justify-between">
-            <div class="w-52">
+          <div class="grid grid-cols-6 gap-5 justify-between">
+            <div class="w-52 col-span-2 col-start-1">
               <img class="w-2/3" src="c2-assets/logo-header.png" alt="" />
             </div>
 
-            <div class="">
+            <div class="col-span-4 col-end-11 pl-28 text-right">
               <i class="fa-solid fa-bars text-5xl text-green-600"></i>
             </div>
           </div>
         </div>
-
-        <!-- md  -->
+      </section>
+      <!-- md  -->
+      <div class="bg-[#EFEBE3]">
         <div
-          class="navbar-center hidden lg:flex lg:items-center lg:justify-between mx-auto"
+          class="lg:flex hidden flex-row justify-between w-10/12 mx-auto"
+          style=""
         >
-          <div class="nav-left">
+          <!-- left  -->
+
+          <div class="">
             <img src="c2-assets/logo-header.png" alt="" />
           </div>
-          <div class="nav-middle">
+          <!-- middle  -->
+
+          <div class="">
             <ul class="menu flex flex-row px-1">
               <li><a class="text-lg">Product</a></li>
               <li><a class="text-lg">Services</a></li>
@@ -68,26 +74,28 @@
               <li><a class="text-lg">Contact us</a></li>
             </ul>
           </div>
-          <div class="right flex items-center gap-3">
-            <div>
-              <i class="fa-solid text-2xl fa-magnifying-glass"></i>
-              <i class="fa-solid text-2xl fa-cart-shopping"></i>
-            </div>
-            <div class="mr-8">
-              <button
-                class="btn btn-outline btn-success gap-3 text-red-100 text-xl"
-              >
-                Login
-              </button>
-              <button class="btn btn-success text-red-50 text-xl">
-                Register
-              </button>
+          <!-- right  -->
+
+          <div class="">
+            <div class="flex items-center gap-3">
+              <div class="space-x-4">
+                <i class="fa-solid text-2xl fa-magnifying-glass"></i>
+                <i class="fa-solid text-2xl fa-cart-shopping"></i>
+              </div>
+              <div class="mr-8 space-x-3">
+                <button
+                  class="btn btn-outline btn-success gap-3 text-red-100 text-xl"
+                >
+                  Login
+                </button>
+                <button class="btn btn-success text-red-50 text-xl">
+                  Register
+                </button>
+              </div>
             </div>
           </div>
-
-          <!-- jjj -->
         </div>
-      </section>
+      </div>
 
       <!-- nav done -->
       <!-- section hero -->
@@ -189,6 +197,43 @@
             <div>
               <div></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- arrival & offers -->
+      <section class="m-5 md:m-16 w-11/12 md:w-10/12 md:mx-auto mx-auto">
+        <h2 class="text-2xl font-bold text-[#179800] py-5">Service</h2>
+        <div class="service-container flex flex-col md:flex-row gap-7">
+          <div
+            class="border rounded-xl bg-[#115414] flex items-center justify-between text-center flex-col p-7 md:w-3/5 space-y-5"
+          >
+            <div>
+              <img src="c2-assets/dawat-logo.png" alt="" />
+              <button
+                class="px-10 py-3 rounded-xl bg-[#63B76D] text-white font-thin text-xl"
+              >
+                Cook Exotic Dishes
+              </button>
+              <h2 class="text-3xl text-white font-light">
+                Up to <span class="font-semibold">20% OFF</span>
+              </h2>
+            </div>
+            <div>
+              <img src="c2-assets/dawat-mock-up.png" alt="" />
+            </div>
+          </div>
+          <div
+            class="border rounded-xl bg-[#EFEBE3] flex items-center justify-center text-center flex-col p-7 md:w-2/5 space-y-5"
+          >
+            <div class="bg-white rounded-full p-5">
+              <img class="" src="c2-assets/healthy.png" alt="" />
+            </div>
+            <h3 class="text-xl font-bold">Healthy Products</h3>
+            <p class="text-sm text-gray-500">
+              Our healthy products are carefully selected to provide you with
+              natural, high-quality ingredients that support your well-being.
+            </p>
           </div>
         </div>
       </section>
